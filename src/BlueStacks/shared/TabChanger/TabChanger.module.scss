@@ -1,0 +1,71 @@
+@import '../../commonstyles/variables.scss';
+.clicked {
+  margin-right: 30px;
+  border-bottom:4px solid #82A52E;
+  .highlighted {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 12px 16px 12px;
+    width: auto;
+    .text {
+      @include fontStyle(15px);
+      font-weight: bolder;
+      color: #82A52E;
+    }
+    .grey {
+      color: $Grey;
+    }
+    .white {
+      color: #23334c;
+    }
+  }
+  .clickicon {
+    height: 5px;
+    background-color: #00b9f5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.click {
+  margin-right: 30px;
+  .highlight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 12px 16px 12px;
+    width: auto;
+    .text {
+      @include fontStyle(15px);
+      font-weight: bolder;
+      color: #23334c;
+    }
+    .grey {
+      color: $Grey;
+    }
+    .white {
+      color: #23334c;
+    }
+  }
+  .clickic {
+    height: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clicked  {
+      margin-right: 0px;
+  }
+  .click{
+    margin-right: 0px;
+  }
+  .highlighted {
+    padding-left: 0px;
+  }
+}
